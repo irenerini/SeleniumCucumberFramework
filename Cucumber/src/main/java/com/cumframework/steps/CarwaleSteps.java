@@ -67,13 +67,17 @@ private BaseClass base;
 	public void click_on_Used() throws InterruptedException {
 		
 		Actions builder = new Actions(base.driver);
-		Thread.sleep(5000);
-		WebElement usedcars = base.driver.findElementByXPath("//div[text()='USED CARS']");
-		WebElement fusedcars = base.driver.findElementByXPath("//div[text() = \"Find Used Cars\"]");
+		
+		//base.driver.findElementByXPath("//div[text()='Continue in English']").click();
+		//Thread.sleep(2000);
+		//WebElement usedcars = base.driver.findElementByXPath("//div[text()='USED CARS']");
+		//WebElement usedcars = base.driver.findElementByXPath("(//div[contains(@class,'o-frwuxB o-eqqVmt')])[2]");
+		//WebElement fusedcars = base.driver.findElementByXPath("//div[text() = \"Find Used Cars\"]");
 		
 		//base.driver.findElementByXPath("//span[text()=\"Used\"]").click();
-		builder.moveToElement(usedcars).perform();
-		builder.moveToElement(fusedcars).click().perform();
+		//builder.moveToElement(usedcars).click().perform();
+		
+		//builder.moveToElement(fusedcars).click().perform();
 		Thread.sleep(2000);
 		
 	}
@@ -104,7 +108,7 @@ private BaseClass base;
 	public void select_Cars_with_Photos_under_Only_Show_Cars_With() throws InterruptedException {
 
 		js = (JavascriptExecutor) base.driver;
-		js.executeScript("window.scrollBy(0,500)");
+		js.executeScript("window.scrollBy(0,400)");
 		base.driver.findElementByXPath("//span[text()='Cars with Photos']").click();
 		Thread.sleep(2000);
 		
