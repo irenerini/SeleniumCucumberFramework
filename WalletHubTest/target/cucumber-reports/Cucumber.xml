@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="74.173255">
+<testcase classname="Write a review for Wallet Hub Insurance Company" name="Write Review" time="74.173255">
+<system-out><![CDATA[Given Login to the WalletHub website........................................passed
+When Rate stars as part of review...........................................passed
+Then Write a review by selecting company....................................passed
+Then Check for the updation of review feed..................................passed
+]]></system-out>
+</testcase>
+</testsuite>

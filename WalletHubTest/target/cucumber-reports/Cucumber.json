@@ -1,0 +1,108 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-04-22T18:46:48.728Z",
+        "before": [
+          {
+            "result": {
+              "duration": 15848324300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openDriver()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Write Review",
+        "description": "",
+        "id": "write-a-review-for-wallet-hub-insurance-company;write-review",
+        "after": [
+          {
+            "result": {
+              "duration": 828327700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.closeDriver()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1054315200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Login to the WalletHub website",
+            "match": {
+              "location": "WalletHub_Steps.login_to_the_WalletHub_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 13245845900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Rate stars as part of review",
+            "match": {
+              "location": "WalletHub_Steps.rate_stars_as_part_of_review()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 40183093000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Write a review by selecting company",
+            "match": {
+              "location": "WalletHub_Steps.write_a_review_by_selecting_company()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3006970200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Check for the updation of review feed",
+            "match": {
+              "location": "WalletHub_Steps.check_for_the_updation_of_review_feed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@WalletHubReview"
+          }
+        ]
+      }
+    ],
+    "name": "Write a review for Wallet Hub Insurance Company",
+    "description": "",
+    "id": "write-a-review-for-wallet-hub-insurance-company",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/WalletHubReview.feature",
+    "tags": [
+      {
+        "name": "@WalletHubReview",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
